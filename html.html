@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class person{
+    constructor(name, age){
+      this.name =  name;
+      this.age = age;
+      this.gender = gender;
+      this.color = color;
+      this.addr  = addr;
+    }  
+  }
+  class student extends person{
+    constructor(name,age,gender,color,addr,number,grade,stream){
+    super(name,age,gender,color,addr);
+    this.number=number;
+    this.grade =grade;
+    this.stream=stream;
+    }
+    dis{
+      document.write(`name: ${this.name}`);
+      document.write(`age: ${this.age})`;
+      document.write(`gender: ${this.gender}`);
+      document.write(`color: ${this.color}`);
+      document.write(`addr: ${this.addr}`);
+      document.write(`number: ${this.number}`);
+      document.write(`grade: ${this.grade}`);
+      document.write(`stream: ${this.stream}`);
+    }
+    
+  }
+  let obj = new student("shaurya",20,"male","white","pta nhi",0,"Z","bekar wali");
+  obj.dis();
+    </script>
+</body>
+</html>
